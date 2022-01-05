@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <img src="/img/IMG_0335.JPG">
+            <img src="/img/IMG_0516.JPG">
+            <img src="/img/IMG_1215.jpg">
+            <img src="/img/IMG_7843.jpg">
+            <img src="/img/IMG_8267.jpg">
+            <img src="/img/IMG_7853.jpg">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<i class='fas fa-angle-left'></i>",
+                    "<i class='fas fa-angle-right'></i>"
+                ],
+                items: 3,
+                margin: 10,
+                center: true,
+                autoplay: true,
+                autoplayHoverPause: true,
+                loop: true,
+                smartSpeed: 200,
+                animateIn: "fadeIn", //will work when there is 1 item
+                animateOut: "fadeOut", //will work when there is 1 item
+                responsive: {
+                    0 : {
+                        items: 1,
+                        nav: false
+                    },
+                    530 : {
+                        items: 3,
+                        nav: true
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
