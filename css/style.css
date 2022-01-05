@@ -19,14 +19,14 @@ img {
     height: 100px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
     display: block !important;
     border:0px solid black;
     
 }
-.owl-prev { left: -20px; }
-.owl-next { right: -20px; }
-.owl-prev i, .owl-next i {transform : scale(3,5); color: #ccc;}
+.owl-prev { left: 5px; }
+.owl-next { right: 5px; }
+.owl-prev i, .owl-next i {transform : scale(2,4); color: white; opacity: 60%;}
 
 .owl-item.active{
     opacity: 50%;
